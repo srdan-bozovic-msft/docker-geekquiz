@@ -1,0 +1,13 @@
+#!/bin/bash
+
+OLD1='$(ReplacableToken_MyDefaultConnection-Web.config Connection String_0)'
+NEW1="SERVER=db;DATABASE=$DB_ENV_MYSQL_DATABASE;UID=$DB_ENV_MYSQL_USER;PASSWORD=$DB_ENV_MYSQL_PASSWORD"
+
+OLD2='$(ReplacableToken_MyDefaultConnectionQuiz-Web.config Connection String_0)'
+NEW2="SERVER=db;DATABASE=GeekQuizDB;UID=root;PASSWORD=$DB_ENV_MYSQL_ROOT_PASSWORD"
+
+sed -i "s/$OLD1/$NEW1/g" /var/www/Web.config
+sed -i "s/$OLD2/$NEW2/g" /var/www/Web.config
+
+exec /usr/sbin/runit_bootstrap
+
