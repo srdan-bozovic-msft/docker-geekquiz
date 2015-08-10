@@ -1,4 +1,5 @@
 FROM seif/docker-mono-fastcgi-nginx
+MAINTAINER srdjan.bozovic@live.com
 RUN apt-get update && apt-get -y install unzip
 ADD https://dockerdeploy.blob.core.windows.net/drop/GeekQuiz.zip /tmp/GeekQuiz.zip
 RUN unzip /tmp/GeekQuiz.zip -d /tmp/www/ && \
