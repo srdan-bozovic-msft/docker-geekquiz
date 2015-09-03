@@ -1,0 +1,16 @@
+db:
+  environment:
+  - MYSQL_ROOT_PASSWORD=Beograd011
+  - MYSQL_DATABASE=geekquizmvcmysql4
+  - MYSQL_USER=boss
+  - MYSQL_PASSWORD=Beograd011
+  image: mysql
+  volumes:
+  - /var/lib/mysql:/var/lib/mysql
+webapp:
+  image: web
+  links:
+  - db
+  ports:
+  - 80:80
+  restart: always
