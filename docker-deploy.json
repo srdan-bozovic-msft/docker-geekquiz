@@ -22,7 +22,7 @@
       ]
     },
     "mysqlPassword": {
-      "type": "securestring",
+      "type": "string",
       "metadata": {
         "description": "Root password for the MySQL database."
       }
@@ -34,7 +34,7 @@
       }
     },
     "adminPassword": {
-      "type": "securestring",
+      "type": "string",
       "metadata": {
         "description": "Password for the Virtual Machine."
       }
