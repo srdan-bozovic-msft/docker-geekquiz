@@ -1,9 +1,9 @@
 db:
   environment:
-  - MYSQL_ROOT_PASSWORD=Beograd011
+  - MYSQL_ROOT_PASSWORD=Just_Bla_Temp_pwd
   - MYSQL_DATABASE=geekquizmvcmysql4
-  - MYSQL_USER=boss
-  - MYSQL_PASSWORD=Beograd011
+  - MYSQL_USER=boss_boss
+  - MYSQL_PASSWORD=Just_Bla_Temp_pwd
   image: mysql
   volumes:
   - /var/lib/mysql:/var/lib/mysql
