@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OLD1='$(ReplacableToken_MyDefaultConnection-Web.config Connection String_0)'
-NEW1="SERVER=db;DATABASE=$DB_ENV_MYSQL_DATABASE;UID=$DB_ENV_MYSQL_USER;PASSWORD=$DB_ENV_MYSQL_PASSWORD"
+NEW1="SERVER=c1master1;DATABASE=$DB_ENV_MYSQL_DATABASE;UID=$DB_ENV_MYSQL_USER;PASSWORD=$DB_ENV_MYSQL_PASSWORD"
 
 OLD2='$(ReplacableToken_MyDefaultConnectionQuiz-Web.config Connection String_0)'
 NEW2="SERVER=c1master1;DATABASE=GeekQuizDB;UID=root;PASSWORD=$DB_ENV_MYSQL_ROOT_PASSWORD"
